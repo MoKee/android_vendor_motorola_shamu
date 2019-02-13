@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/shamu/proprietary/etc/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
     vendor/motorola/shamu/proprietary/etc/Headset_cal.acdb:system/etc/Headset_cal.acdb \
     vendor/motorola/shamu/proprietary/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb \
+    vendor/motorola/shamu/proprietary/etc/qcril.db:system/etc/qcril.db \
     vendor/motorola/shamu/proprietary/etc/diag/mdm/FIT_V16_1.cfg:system/etc/diag/mdm/FIT_V16_1.cfg \
     vendor/motorola/shamu/proprietary/etc/diag/mdm/FIT_V16_2_volte_full_ip.cfg:system/etc/diag/mdm/FIT_V16_2_volte_full_ip.cfg \
     vendor/motorola/shamu/proprietary/etc/diag/mdm/FIT_V16_3_audio.cfg:system/etc/diag/mdm/FIT_V16_3_audio.cfg \
@@ -370,7 +371,6 @@ PRODUCT_PACKAGES += \
     DMConfigUpdate \
     HiddenMenu \
     TimeService \
-    Tycho \
     VZWAPNLib \
     atfwd \
     ims \
@@ -378,12 +378,10 @@ PRODUCT_PACKAGES += \
     BuaContactAdapter \
     CNEService \
     CQATest \
-    CarrierServices \
     ConnMO \
     DCMO \
     DMService \
     DiagMon \
-    GCS \
     LifetimeData \
     MotoSignatureApp \
     SprintDM \
